@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rushi — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+  <header class="nav-bar">
+    <a class="brand" href="#home"><div class="logo">S</div><div class="brand-name"><strong>RUSHI</strong><span>Designer • Developer</span></div></a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu"><span class="hamburger"></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="cta">Contact</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h1>Designing beautiful, usable web experiences</h1>
+        <p class="lead">I craft interfaces with motion, color, and accessibility in mind. I build fast, responsive sites that feel alive.</p>
+        <a class="cta" href="#work">See my work</a>
+      </div>
+      <div class="hero-right">
+        <div class="feature-card">
+          <div class="feature-img" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop')"></div>
+          <h3>Aurora Dashboard</h3>
+          <p>Responsive admin UI with delightful micro-interactions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="grid">
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1200&auto=format&fit=crop')"></div>
+        <h4>Project One</h4>
+        <div class="meta"><span class="pill">UI</span><span>React • CSS</span></div>
+        <p>Animated landing with clear hierarchy and motion-driven storytelling.</p>
+      </article>
+
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop')"></div>
+        <h4>Project Two</h4>
+        <div class="meta"><span class="pill">Brand</span><span>Illustration • Web</span></div>
+        <p>Brand identity and marketing site with bold typography.</p>
+      </article>
+
+      <article class="card hire">
+        <h4>Hire me</h4>
+        <p>Available for freelance and full-time roles. Let’s build something great.</p>
+        <a class="cta" href="#contact">Get in touch</a>
+      </article>
+    </section>
+
+  
+
+<script>
+  const btn = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('navLinks');
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('open');
+    btn.classList.toggle('open');
+  });
+</script>
+<!-- EDUCATION: paste into index.html -->
+<section id="education" class="education section-card">
+  <h3 class="section-title">Education</h3>
+
+  <div class="edu-grid">
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="edu-year">2018 — 2022</div>
+        <div class="edu-institution">Savitribai Phule Pune University</div>
+        <div class="edu-degree">B.Sc. Computer Science</div>
+      </div>
+      <div class="edu-right">
+        <div class="edu-highlights">
+          <div class="highlight"><strong>GPA</strong> 8.6 / 10</div>
+          <div class="highlight"><strong>Thesis</strong> Interactive UI patterns for accessibility</div>
+          <div class="highlight"><strong>Activities</strong> UI Club lead; Hackathon winner</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="edu-year">2016 — 2018</div>
+        <div class="edu-institution">St. Xavier's College</div>
+        <div class="edu-degree">Higher Secondary Certificate</div>
+      </div>
+      <div class="edu-right">
+        <div class="edu-highlights">
+          <div class="highlight"><strong>Stream</strong> Science</div>
+          <div class="highlight"><strong>Top Subjects</strong> Mathematics, Physics</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cert-row">
+    <div class="cert">
+      <div class="cert-badge">Cert</div>
+      <div class="cert-info"><strong>Google UX Design</strong><span class="cert-meta"> • 2023</span></div>
+    </div>
+    <div class="cert">
+      <div class="cert-badge">Cert</div>
+      <div class="cert-info"><strong>React Developer</strong><span class="cert-meta"> • 2021</span></div>
+    </div>
+  </div>
+</section>
+ <!-- BTECH WORK SECTION -->
+<section id="btech" class="section-card">
+  <h3 class="section-title">BTech Projects and Experience</h3>
+
+  <!-- Final Year Project -->
+  <div class="btech-grid">
+    <article class="btech-card">
+      <div class="btech-head">
+        <div class="btech-title">Final Year Project</div>
+        <div class="btech-year">2023 — 2024</div>
+      </div>
+      <div class="btech-body">
+        <div class="btech-thumb" style="background-image:url('https://images.unsplash.com/photo-1581093588401-1c6b0b6f6f3b?q=80&w=1200&auto=format&fit=crop')"></div>
+        <h4 class="proj-name">Smart Campus Dashboard</h4>
+        <p class="proj-desc">An IoT driven dashboard for campus energy monitoring with real-time charts, anomaly detection, and role-based access. Built with React, Node.js, and MQTT.</p>
+        <ul class="proj-highlights">
+          <li><strong>Role</strong> Lead Developer and UX Designer</li>
+          <li><strong>Tech</strong> React • Node.js • MQTT • PostgreSQL • D3</li>
+          <li><strong>Outcome</strong> Reduced energy waste by simulated 18% in pilot tests</li>
+          <li><strong>Deliverables</strong> Prototype, documentation, demo video</li>
+        </ul>
+        <div class="proj-links">
+          <a class="mini-btn" href="#" aria-label="Project report">Report</a>
+          <a class="mini-btn" href="#" aria-label="Project demo">Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Internship -->
+    <article class="btech-card">
+      <div class="btech-head">
+        <div class="btech-title">Industry Internship</div>
+        <div class="btech-year">Summer 2023</div>
+      </div>
+      <div class="btech-body">
+        <h4 class="proj-name">Frontend Intern at NovaTech</h4>
+        <p class="proj-desc">Worked on component library, accessibility fixes, and performance optimizations for the customer portal.</p>
+        <ul class="proj-highlights">
+          <li><strong>Contributions</strong> Built 12 reusable components; improved Lighthouse score from 58 to 86</li>
+          <li><strong>Collaboration</strong> Paired with backend team to design API contracts</li>
+        </ul>
+        <div class="proj-links">
+          <a class="mini-btn" href="#" aria-label="Internship certificate">Certificate</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Lab Projects -->
+    <article class="btech-card">
+      <div class="btech-head">
+        <div class="btech-title">Lab Projects</div>
+        <div class="btech-year">2019 — 2023</div>
+      </div>
+      <div class="btech-body">
+        <h4 class="proj-name">Selected Coursework Projects</h4>
+        <p class="proj-desc">Multiple semester projects across OS, DBMS, Networks, and ML demonstrating applied skills and teamwork.</p>
+        <ul class="proj-highlights">
+          <li><strong>DBMS</strong> Implemented a mini relational engine with query parsing</li>
+          <li><strong>ML</strong> Image classifier using transfer learning with 92% accuracy</li>
+          <li><strong>Networks</strong> Simulated routing protocols and visualized packet flows</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+  <!-- Timeline and Qualifications -->
+  <div class="btech-extra">
+    <div class="timeline">
+      <h4>Academic Timeline</h4>
+      <ol>
+        <li><strong>2020</strong> Completed Data Structures and Algorithms with A grade</li>
+        <li><strong>2021</strong> Published conference poster on low-power IoT sensing</li>
+        <li><strong>2022</strong> Led UI Club; organized 2 hackathons</li>
+      </ol>
+    </div>
+
+    <div class="quals">
+      <h4>Qualifications</h4>
+      <div class="qual-item"><strong>Degree</strong> BTech in Computer Engineering • Savitribai Phule Pune University</div>
+      <div class="qual-item"><strong>CGPA</strong> 8.6 / 10</div>
+      <div class="qual-item"><strong>Relevant Courses</strong> Algorithms; Operating Systems; Database Systems; Computer Networks; Machine Learning</div>
+    </div>
+  </div>
+</section>
+  <section id="about" class="about">
+      <h3>About</h3>
+      <p>I’m RUSHI, a designer and front-end developer focused on accessible, performant interfaces.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact</h3>
+      <form class="contact-form" action="#" method="post" onsubmit="alert('Demo form — replace with your backend'); return false;">
+        <input name="name" placeholder="Your name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button class="cta" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© <strong>Saurabh</strong></div>
+    <div class="socials"><a>Twitter</a><a>GitHub</a></div>
+  </footer>
+</body>
+</html>
